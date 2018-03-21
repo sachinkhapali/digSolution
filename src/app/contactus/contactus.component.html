@@ -1,0 +1,78 @@
+
+    <div class="container">
+        <div class="col-6 mx-auto bg-image">
+            <div class="card" >
+                <div class="card-header text-white bg-primary text-center">Contact Us</div>
+                <div class="card-body">
+                    <form [formGroup]="contactUsForm" class="form-horizontal">
+                      <div class="form-group" [ngClass]="displayFieldCss('name')">
+                          <div class="col-sm-12">
+                            <label for="name" class="control-label required">Name</label>
+                            <input type="text" id="name" class="form-control" formControlName="name">
+                            <app-field-error-display 
+                              [displayError]="isFieldValid('name')" 
+                              errorMsg="Please inform your name">
+                            </app-field-error-display>      
+                        </div>
+                      </div>
+                      <div class="form-group" [ngClass]="displayFieldCss('email')">
+                            <div class="col-sm-12">
+                                <label for="email" class="control-label required">Email</label>
+                                <input type="text" id="email" class="form-control" formControlName="email">
+                                <app-field-error-display 
+                                [displayError]="isFieldValid('email')" 
+                                errorMsg="Please provide valid email address">
+                                </app-field-error-display>
+                                
+                                        <!--div *ngIf="contactUsForm.get('email').hasError('required') && submitted">
+                                                Please provide email address.
+                                        </div> 		   
+                                        <div *ngIf="contactUsForm.get('email').hasError('email') && submitted">
+                                            Email not valid.
+                                        </div --> 
+                         
+                            </div>
+                      </div>
+                      <div class="form-group" [ngClass]="displayFieldCss('userPhone')">
+                        <div class="col-sm-12">
+                            <label for="email" class="control-label required">Phone</label>
+                            <input type="text" id="userPhone" class="form-control" formControlName="userPhone">
+                            <app-field-error-display 
+                            [displayError]="isFieldValid('userPhone')" 
+                            errorMsg="Please provide phone/mobile number">
+                            </app-field-error-display> 
+                        </div>
+                      </div>
+                      <div class="form-group" [ngClass]="displayFieldCss('message')">
+                        <div class="col-sm-12">
+                            <label for="email" class="control-label">Message</label>
+                            <textarea class="form-control" formControlName="message" id="message" placeholder="Your message"></textarea> 
+                        </div>  
+                      </div>
+                      <!--div class="form-group">                        
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email" required>  
+                        <div class="alert" *ngIf="!myForm.controls['email'].valid && myForm.controls['email'].touched">
+
+                        </div>
+                      </div>
+                      <div class="form-group">                          
+                          <input type="text" class="form-control" id="userName" formControlName="name" placeholder="Your name">
+                          <div *ngIf="myForm.get('name').hasError('required')">
+                              Oops, please provide a name!
+                            </div>
+                      </div>
+                      <div class="form-group">                          
+                          <input type="text" class="form-control" formControlName="phone" id="userPhone" placeholder="Your phone number">
+                      </div>
+                      <div class="form-group">                          
+                          
+                      </div -->  
+                    </form> 
+                </div> 
+                <div class="card-footer align-right">  
+                    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button> </div>
+              </div>        
+        </div>             
+    </div>
+
+    
