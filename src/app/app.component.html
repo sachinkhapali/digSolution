@@ -1,29 +1,61 @@
 
-<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/">DizTechnologies</a>
-    <div class="collapse navbar-collapse">
+<nav class="navbar navbar-expand-sm">
+  <!-- Brand/logo -->
+  <a class="navbar-brand text-white" href="/">DizTechnologies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Digital Marketing<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Application Development
-            </a>
-            <div class="dropdown-menu bg-dark ">
-              <a class="dropdown-item" href="#">Andriod Application</a>
-              <a class="dropdown-item" href="#">Web Design</a>
-              <a class="dropdown-item" href="#">ERP Application</a>
+          <a class="nav-link dropdown-toggle text-white" id="navbardrop1" data-toggle="dropdown" href="#">Digital Marketing</a>
+          <div class="dropdown-menu bg-dark ">
+              <a class="dropdown-item" href="#"> 
+                <img src="../assets/imgs/seo.png" class="img-Dropdown" alt="Cinque Terre"><span style="padding-left:10px;"> SEO</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                  <img src="../assets/imgs/conversion_rate.png" class="img-Dropdown" alt="Cinque Terre">
+                    <span style="padding-left:4px;">Conversion Optimization</span>
+                  </a>              
+              <a class="dropdown-item" href="#">
+                  <img src="../assets/imgs/online_pr.png" class="img-Dropdown" alt="Cinque Terre">
+                  <span style="padding-left:10px;"> Online PR</span></a>
+              <a class="dropdown-item" href="#">
+                  <img src="../assets/imgs/web_design.png" class="img-Dropdown" alt="Cinque Terre">
+                  <span style="padding-left:10px;"> Creative Design</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                  <img src="../assets/imgs/lead_generation.png" class="img-Dropdown" alt="Cinque Terre">
+                  <span style="padding-left:10px;">Lead Generation</span>
+              </a>
+              <a class="dropdown-item" href="#">Link Removal</a>
+              <a class="dropdown-item" href="#">Social Media marketing</a>
             </div>
         </li>
+        <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Products<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+              Services
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Enterprise Application</a>
+              <a class="dropdown-item" href="#">Web Application </a>              
+              <a class="dropdown-item" href="#">Andriod Application</a>
+              <a class="dropdown-item" href="#">Software Development</a>
+              <a class="dropdown-item" href="#">Data Analytics</a>
+            </div>
+        </li>
+       
         <li class="nav-item">
-            <a class="nav-link" href="#">Data Analytics</a>
+          <a class="nav-link text-white" href="/contactUs">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contactUs">Contact Us</a>
+            <a class="nav-link text-white" href="/contactUs">About</a>
         </li>
       </ul>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav text-white">
         <li class="nav-item">
           <a class="nav-link" href="https://medium.com/@beeman"><i class="fa fa-medium" aria-hidden="true"></i></a>
         </li>
@@ -34,12 +66,35 @@
           <a class="nav-link" href="https://github.com/beeman"><i class="fa fa-github" aria-hidden="true"></i></a>
         </li>
       </ul>
+ 
     </div>
 </nav>
-<div class="router"> 
-    <router-outlet></router-outlet>
+<div>
+    <div class="row">
+        <div class="col-md-2" style="padding-top: 100px;padding-left: 100px;color:aliceblue">
+            <a href="#">
+                <img src="../assets/imgs/menu/dm1.png" class="" alt="Digital Marketing">                
+                </a>
+        </div>
+        <div class="col-sm-2 show-div">
+            
+            <a class="dropdown-item" href="#"> 
+                <img src="../assets/imgs/large/seo.jpg" class="dizMarketing1" alt="Cinque Terre">                
+            </a>
+            <a href="#" class="btn btn-outline-warning dizMarketing2" role="button">Digital Marketing</a>
+            <a href="#" class="btn btn-outline-warning dizMarketing3" role="button">Digital Marketing</a>
+        </div>
+      </div>
 </div>
-
+<!--div class="container-fluid">
+  DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+  
+  <h3>Brand / Logo</h3>
+  <p>The .navbar-brand class is used to highlight the brand/logo/project name of your page.</p>
+</div -->
+<div class="router"> 
+  <router-outlet></router-outlet>
+</div>
 
   
 
