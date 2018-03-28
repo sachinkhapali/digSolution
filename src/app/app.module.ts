@@ -6,12 +6,30 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FieldErrorDisplayComponent } from './contactus/field-error-display/field-error-display.component';
+import { DizmarketingComponent } from './dizmarketing/dizmarketing.component';
+import { SeoComponent } from './dizmarketing/seo/seo.component';
+import { ConversionRateComponent } from './dizmarketing/conversion-rate/conversion-rate.component';
+import { PrComponent } from './dizmarketing/pr/pr.component';
+import { WebDesignComponent } from './dizmarketing/web-design/web-design.component';
+import { LeadGenerationComponent } from './dizmarketing/lead-generation/lead-generation.component';
+import { LinkRemovalComponent } from './dizmarketing/link-removal/link-removal.component';
+import { SocialMediaMarketingComponent } from './dizmarketing/social-media-marketing/social-media-marketing.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactusComponent,
     FieldErrorDisplayComponent,
+    DizmarketingComponent,
+    SeoComponent,
+    ConversionRateComponent,
+    PrComponent,
+    WebDesignComponent,
+    LeadGenerationComponent,
+    LinkRemovalComponent,
+    SocialMediaMarketingComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,12 +9,17 @@ export class AppComponent implements OnInit{
   title = 'app';
  
   ngOnInit() {
-    $(document).ready(function() {
-      $('.dizMarketing').hover(
-        function () {
-          $(".show-div").show();
+    $(document).ready(function() {      
+      $('.center').hover(
+        function () {         
+          $(".deg0").show();
+          $(".deg45").show();
+          $(".deg315").show();
         }, 
-       function () {          
+       function () {  
+        $(".deg0").hide();
+        $(".deg45").hide();
+        $(".deg315").hide();   
       });
 
     });
