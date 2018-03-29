@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-image: url("./assets/imgs/background/1.jpg");
-    background-repeat: no-repeat;
+    background-image: url("./assets/imgs/background/4.jpg");
+    background-repeat: repeat-y;
     background-size: 100%; 
+    color: aliceblue;
 }

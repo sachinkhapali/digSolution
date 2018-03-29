@@ -15,6 +15,8 @@ import { LeadGenerationComponent } from './dizmarketing/lead-generation/lead-gen
 import { LinkRemovalComponent } from './dizmarketing/link-removal/link-removal.component';
 import { SocialMediaMarketingComponent } from './dizmarketing/social-media-marketing/social-media-marketing.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ServicesComponent } from './services/services.component';
+import { MobileDevComponent } from './services/mobile-dev/mobile-dev.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     LinkRemovalComponent,
     SocialMediaMarketingComponent,
     AboutUsComponent,
+    ServicesComponent,
+    MobileDevComponent,
   ],
   imports: [
     BrowserModule,

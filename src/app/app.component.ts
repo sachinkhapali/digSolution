@@ -17,11 +17,13 @@ export class AppComponent implements OnInit{
           $(".deg315").show();
         }, 
        function () {  
+        
+      });
+      $('.deg225').hover(function(){
         $(".deg0").hide();
         $(".deg45").hide();
-        $(".deg315").hide();   
-      });
-
+        $(".deg315").hide();
+      });      
     });
   }
 }

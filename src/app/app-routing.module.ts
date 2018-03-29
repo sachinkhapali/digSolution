@@ -10,6 +10,8 @@ import { WebDesignComponent } from './dizmarketing/web-design/web-design.compone
 import { LinkRemovalComponent } from './dizmarketing/link-removal/link-removal.component';
 import { LeadGenerationComponent } from './dizmarketing/lead-generation/lead-generation.component';
 import { SocialMediaMarketingComponent } from './dizmarketing/social-media-marketing/social-media-marketing.component';
+import { MobileDevComponent } from './services/mobile-dev/mobile-dev.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   { path: 'contactUs', component: ContactusComponent },
@@ -22,6 +24,8 @@ const routes: Routes = [
               { path: 'lead-generation', component: LeadGenerationComponent },
               { path: 'link-removal', component: LinkRemovalComponent },
               { path: 'social-media-marketing', component: SocialMediaMarketingComponent }] },
+  { path: 'services', component: ServicesComponent,
+    children:[{path: 'mobile', component: MobileDevComponent}]}
 ];
 
 @NgModule({
