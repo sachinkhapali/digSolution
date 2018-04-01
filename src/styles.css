@@ -5,3 +5,8 @@ body{
     background-size: 100%; 
     color: aliceblue;
 }
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.1em;
+}

@@ -1,3 +1,13 @@
+
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
 .router{
     padding-top: 100px;
 }
@@ -78,4 +88,19 @@
     transform: rotate(315deg) translate(15em) rotate(-315deg);  
     display: none;
     width: 100%;   
+}
+
+
+
+.chrome {
+  position: relative;
+  background-image: -webkit-linear-gradient(rgb(100, 124, 11) 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f5f5f5;
+  font-size: 35px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
 }
