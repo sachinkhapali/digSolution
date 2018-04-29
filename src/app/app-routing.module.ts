@@ -12,8 +12,12 @@ import { LeadGenerationComponent } from './dizmarketing/lead-generation/lead-gen
 import { SocialMediaMarketingComponent } from './dizmarketing/social-media-marketing/social-media-marketing.component';
 import { MobileDevComponent } from './services/mobile-dev/mobile-dev.component';
 import { ServicesComponent } from './services/services.component';
-
+import { DataAnalysisComponent } from './services/data-analysis/data-analysis.component';
+import { WebApplicationComponent } from './services/web-application/web-application.component';
+import { CarouselComponent } from './carousel/carousel.component';
 const routes: Routes = [
+  { path: '',   redirectTo: '/home', pathMatch: 'full' }, 
+  { path: 'home', component: CarouselComponent },
   { path: 'contactUs', component: ContactusComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'dizmarketing', component: DizmarketingComponent,
@@ -25,7 +29,9 @@ const routes: Routes = [
               { path: 'link-removal', component: LinkRemovalComponent },
               { path: 'social-media-marketing', component: SocialMediaMarketingComponent }] },
   { path: 'services', component: ServicesComponent,
-    children:[{path: 'mobile', component: MobileDevComponent}]}
+    children:[{path: 'mobile', component: MobileDevComponent},
+              {path: 'data-analysis', component: WebApplicationComponent},
+              {path: 'web-dev', component: DataAnalysisComponent }]}
 ];
 
 @NgModule({

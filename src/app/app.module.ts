@@ -17,6 +17,9 @@ import { SocialMediaMarketingComponent } from './dizmarketing/social-media-marke
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { MobileDevComponent } from './services/mobile-dev/mobile-dev.component';
+import { WebApplicationComponent } from './services/web-application/web-application.component';
+import { DataAnalysisComponent } from './services/data-analysis/data-analysis.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { MobileDevComponent } from './services/mobile-dev/mobile-dev.component';
     AboutUsComponent,
     ServicesComponent,
     MobileDevComponent,
+    WebApplicationComponent,
+    DataAnalysisComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

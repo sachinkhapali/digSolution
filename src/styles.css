@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-image: url("./assets/imgs/background/4.jpg");
-    background-repeat: repeat-y;
+    background-image: url("./assets/imgs/background/5.jpg");
+    background-repeat: no-repeat;
     background-size: 100%; 
     color: aliceblue;
 }
@@ -9,4 +9,13 @@ body{
 p {
     font-family: "Times New Roman", Times, serif;
     font-size: 1.1em;
+}
+.div-alignment{
+    padding: 3%;
+    width: 50%;
+}
+h4{
+    /*text-decoration: underline;*/
+    text-decoration-color: white;
+    text-decoration-style: none;
 }

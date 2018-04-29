@@ -9,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=Monoton);
 
 .router{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .navbar1{
@@ -22,6 +22,32 @@
     background-color: rgb(183, 182, 245);
     color: black;
 }
+
+.topright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 78%;
+    font-size: 15px;
+    color: black;
+    padding-right: 20px;
+    padding-top: 3px;
+    width: 20%;
+    height: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: right; 
+    font-family: "Arial Black", Gadget, sans-serif;    
+    background: #ffc578; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffc578 0%, #fb9d23 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffc578 0%,#fb9d23 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffc578 0%,#fb9d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */
+    
+}
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc578+0,fb9d23+100;Orange+3D+%233 */
+/*
+ Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+31,d7dee3+54,f5f7f9+100 */
 
 .dropdown-item {
     display: block;
@@ -38,6 +64,7 @@
 
 .img-Dropdown{
     height: 30px;
+    width: 40px;
 }
 .dizMarketing1{
     height: 70px;    
@@ -51,56 +78,23 @@
     padding-top: 0px;
 }
 
-/**
- * Position icons into circle (SO)
- * http://stackoverflow.com/q/12813573/1397351 
- */
- .circle-container {
-	position: relative;
-	width: 30em;
-	height: 30em;
-	padding: 3.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
-	border: dashed 1px;
-	border-radius: 50%;
-	/*margin: 1.75em auto 0;*/
-}
-.circle-container a {	
-	overflow: hidden;
-	position: absolute;
-	top: 50%; left: 50%;
-	
-	margin: -2em; /* 2em = 4em/2 */ /* half the width */
-}
-/*.circle-container img { display: block; width: 100%; }*/
-.deg0 { transform: translate(15em); 
-        display: none;
-        width: 100%;    
-} /* 12em = half the width of the wrapper */
-.deg45 { 
-    transform: rotate(45deg) translate(15em) rotate(-45deg); 
-    display: none;
-    width: 100%;   
-}
-.deg135 { transform: rotate(135deg) translate(15em) rotate(-135deg); }
-.deg180 { transform: translate(-15em); }
-.deg225 { transform: rotate(225deg) translate(15em) rotate(-225deg); }
-.deg315 { 
-    transform: rotate(315deg) translate(15em) rotate(-315deg);  
-    display: none;
-    width: 100%;   
-}
-
-
-
 .chrome {
   position: relative;
   background-image: -webkit-linear-gradient(rgb(100, 124, 11) 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #f5f5f5;
-  font-size: 35px;
+  -webkit-text-stroke: 0px #f5f5f5;
+  font-size: 40px;
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
   margin: 0;
   line-height: 1;
+}
+
+li {
+    border-right: 2px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
 }
